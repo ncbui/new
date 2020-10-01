@@ -33,11 +33,7 @@ export default function About() {
     fetchData();
   }, [isLoading]);
 
-  const stacklist = () => {
-    for (let key in stack) {
-      return <li> {key}: {key[0]} </li>
-    }
-  }
+  console.log(stack)
 
   return (
     <div className="About" id="About">
@@ -50,19 +46,21 @@ export default function About() {
         {!isLoading && (
           <Row>
             <Col className="About-skills col-12 col-lg-4">
-              <Card body>
-                <CardTitle className="text-right">
+              <Card>
+                <CardHeader className="text-right">
                   <h3> Skills </h3>
-                </CardTitle>
+                </CardHeader>
+                <CardBody>
                 <CardText>
-                  FIXME not sure about this section. open to moving it
-                  <ul>
-                    <li>my toolkit</li>
-                    <li>libraries</li>
-                    <li>frameworks</li>
-                    <li>concepts</li>
-                  </ul>
+                FIXME not sure about this section. open to moving it
+                <ul>
+                <li>my toolkit</li>
+                <li>libraries</li>
+                <li>frameworks</li>
+                <li>concepts</li>
+                </ul>
                 </CardText>
+                </CardBody>
               </Card>
             </Col>
             <Col className="About-me text-left col-12 col-lg-8">
