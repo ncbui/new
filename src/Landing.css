@@ -1,10 +1,10 @@
 .Landing {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .Landing-container {
     height: 60vh;
-    padding: auto;
+    padding: 20vh 0;
 }

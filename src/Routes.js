@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 
 import Landing from './Landing';
@@ -14,6 +14,7 @@ import Experience from './Experience';
  */
 export default function Routes() {
   return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/">
           <Landing />
@@ -27,9 +28,7 @@ export default function Routes() {
         <Route exact path="/exp" >
           <Experience />
         </Route>
-        <Route>
-          <h3>Oops, found a dead end</h3>
-        </Route>
       </Switch>
+    </BrowserRouter>
   );
 }

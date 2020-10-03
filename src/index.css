@@ -17,9 +17,12 @@ code {
     color: teal;
     border-radius: 1rem;
     margin: 16vh 0;
-    /* padding: 10vh 0; */
 }
 
 .card {
     border-radius: 1rem;
+}
+
+.About-spinner {
+    margin: 10vh 0;
 }
