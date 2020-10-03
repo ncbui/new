@@ -25,8 +25,8 @@ export default function Footer() {
     <div className="Footer fixed-bottom">
       <Container fluid className="Footer-container col-12">
         <div className="Footer-contact col-12 col-md-6 mr-auto text-left">
-        <p className="col-6 mr-auto">
-             Animation as counterbalance to the toggling-animation of the top-right menu. Can be purely for funsies.
+        <p className="col-6 mr-auto" alt="Animation as counterbalance to the toggling-animation of the top-right menu. Can be purely for funsies.">
+        Animated component
         </p>
         </div>
         <div className="Footer-notes col-12 col-md-6 mr-auto text-right">
