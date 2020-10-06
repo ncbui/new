@@ -16,17 +16,20 @@ export default function Routes() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/planning">
           <Landing />
         </Route>
-        <Route exact path="/about" >
+        <Route exact path="/planning/about" >
           <About />
         </Route>
-        <Route exact path="/projects" >
+        <Route exact path="/planning/projects" >
           <ProjectsList />
         </Route>
-        <Route exact path="/exp" >
+        <Route exact path="/planning/exp" >
           <Experience />
+        </Route>
+        <Route>
+        <div> oops, what happened here? </div>
         </Route>
       </Switch>
     </BrowserRouter>
