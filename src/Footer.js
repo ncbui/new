@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  Container
+  Container,
+  Row,
+  Col,
 } from 'reactstrap';
 import './Footer.css'
-
-import portfolioApi from "./Api";
 
 /**Renders a collection of components */
 export default function Footer() {
@@ -12,16 +13,41 @@ export default function Footer() {
   return (
     <div className="Footer fixed-bottom">
       <Container fluid className="Footer-container col-12">
-        <div className="Footer-contact col-12 col-md-6 mr-auto text-left">
-        <p className="col-6 mr-auto">
-        Animated component
-        </p>
-        </div>
-        <div className="Footer-notes col-12 col-md-6 mr-auto text-right">
-          <small className="Footer-notes-text">
-            fuck the system and also hire me plz
+        <Row className="align-items-bottom">
+          <Col className="Footer-notes col-12 col-md-6 mr-auto text-center text-md-left align-bottom">
+            <p className="col-12 col-md-8 mr-auto">
+              <small className="Footer-notes-text">
+                fuck the system && hire me plz
           </small>
-        </div>
+      </p>
+          </Col>
+          <Col className="Footer-contact col-12 col-md-6 mr-auto text-center text-md-right">
+              <a href="www.github.com/ncbui">
+                <FontAwesomeIcon
+                  icon={['fab', 'github']} 
+                  className="Footer-icon"
+                  size="xl"
+                  fixedWidth
+                />
+              </a>
+              <a href="www.linkedin.com/in/cambui">
+                <FontAwesomeIcon
+                  icon={['fab', 'linkedin']} 
+                  className="Footer-icon"
+                  size="xl"
+                  fixedWidth
+                />
+              </a>
+              <a href="www.FIXME.com">
+                <FontAwesomeIcon
+                icon={['far', 'envelope']} 
+                  className="Footer-icon"
+                  size="xl"
+                  fixedWidth
+                />
+              </a>
+          </Col>
+        </Row>
       </Container>
     </div>
   )

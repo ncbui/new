@@ -1,5 +1,12 @@
 import React from "react";
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import {
+  Card,
+  CardTitle,
+  CardText,
+  CardImg,
+  CardImgOverlay,
+  CardBody
+} from 'reactstrap';
 
 
 /**Renders a project img with overlay text
@@ -15,18 +22,40 @@ export default function Project({ project, position }) {
   const align = () => position === 'left' ? 'ml-auto' : 'mr-auto';
 
   return (
-    <div className={'Project col-10 col-lg-6 ' + align()}>
+    <div className={'Project col-12 col-xl-6 ' + align()}>
       <Card inverse>
         <CardImg width="100%" src="https://allears.net/wp-content/uploads/2020/01/Mando-8-BabyYoda-998x677.jpg" alt="Project-FIXME" />
-        <CardImgOverlay>
+        <CardImgOverlay className="col-12 text-center">
           <CardTitle>FIXME {project.name}</CardTitle>
-          <CardText>
-            FIXME {project.details} made with {project.libraries}
-          </CardText>
-          <CardText>
-            <small className="text-muted">Last updated FIXME {project.updated}</small>
-          </CardText>
+          <br />
+          <br />
+          <p>
+            { project.demo && 
+              <a href={project.demo}>Demo</a> 
+            }
+            { project.github && 
+              <>
+              | <a href={project.github}>Github</a>
+              </> }
+          </p>
         </CardImgOverlay>
+        <CardBody className="text-left">
+          <CardText>
+            <p>
+              FIXME {project.description}
+            </p>
+            { (project.frontend || project.backend) &&
+              <p>
+                {project.frontend &&
+                  <>Frontend: {project.frontend}</>}
+                <br />
+                {project.backend &&
+                  <>Backend: {project.backend}</>}
+              </p>
+            }
+            <small className="text-muted">FIXME Last updated  {project.updated}</small>
+          </CardText>
+        </CardBody>
       </Card>
     </div>
   );

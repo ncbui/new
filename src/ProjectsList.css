@@ -1,7 +1,7 @@
 .ProjectsList-container {
     padding-bottom: 6vh;
 }
-
-.Project {
+.card-text {
     padding: 1px;
+    color: slategray !important;
 }

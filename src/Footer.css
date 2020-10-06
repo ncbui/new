@@ -1,9 +1,15 @@
-.Footer-contact-info {
-    display: inline;
-    padding: 0 1rem;
-    border-right: 1px solid black;
+.Footer-icon {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    margin: 5px;
 }
 
-.Footer-contact, .Footer-notes {
-    display: inline-block;
+.Footer {
+    background-color: thistle;
+    color: slategray;
+}
+
+.Footer a {
+    color: slategray;
 }

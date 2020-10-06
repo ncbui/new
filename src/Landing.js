@@ -12,9 +12,8 @@ export default function Landing() {
         <h2>Hello, I am Cam Bui. </h2>
           <h3>Fullstack developer </h3> 
           <p> FIXME
-           working with React, Node/Express, Flask, Python3 
+           working with React, Node.js/Express, Flask, Python3 
           </p>
-
       </header>
       </Container>
     </Jumbotron>

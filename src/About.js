@@ -50,19 +50,16 @@ export default function About() {
               <Card>
                 <CardHeader className="text-right">
                   <h3> Skills </h3>
-                  or just pictures showing off my worm farm
+                  
                 </CardHeader>
                 <CardBody>
-                <CardText>
-                FIXME not sure about this section. open to moving it
-                <ul>
-                <li>my toolkit</li>
-                <li>libraries</li>
-                <li>frameworks</li>
-                <li>concepts</li>
-                </ul>
-                
-                </CardText>
+                  <CardTitle>or icons of hobbies</CardTitle>
+                  <CardText>
+                    <p>not sure
+                    <br />
+                    if keep</p>
+
+                  </CardText>
                 </CardBody>
               </Card>
             </Col>
@@ -81,6 +78,7 @@ export default function About() {
                 </CardFooter>
               </Card>
             </Col>
+            
           </Row>
         )}
       </Container>

@@ -6,7 +6,7 @@ const BASE_API_URL = "http://localhost:5000";
  * json-server will give CRUD endpoints on 
  */
 
- export default class portfolioApi {
+export default class portfolioApi {
 
   static async getAboutMe() {
     const res = await axios.get(`${BASE_API_URL}/aboutMe`);
@@ -16,9 +16,9 @@ const BASE_API_URL = "http://localhost:5000";
   static async mockGetAboutMe() {
     const res = {
       name: "Cam Bui",
-      subtitle: "researcher turned software engineer",
-      long:
-        " FIXME longer text about me. /n blah blah developer amused systems interfacing and dancing with each other. bahcelor studied how the brain navigates physics via this meatsuit. blah blah training and hobby with how perception leads to cognition by way of the conscious field. lemme optimize your front and backends",
+      subtitle:
+      " building tools to give people back some sense of humanity ",
+      long: "researcher turned software engineer. more more more more",
     };
     return res;
   }
@@ -30,39 +30,49 @@ const BASE_API_URL = "http://localhost:5000";
   static async mockGetProjects() {
     const res = [
       {
-        name: "microblog",
-        libraries: "Redux, React, reactstrap, and json-server CRUD backend",
-        link: "",
-        description: " A React blogging website using Redux ",
+        name: "Microblog",
+        frontend: "React, Redux, reactstrap",
+        backend: "json-server CRUD",
+        github:"www.github.com/FIXME",
+        demo: "www.FIXME.com",
+        description: " A small blogging website mockup",
         updated: "September 2020",
       },
       {
-        name: "shoply",
-        libraries: "React, reactstrap, json-server back-end",
-        link: "",
-        description: " A small React e-commerce website using Redux. ",
+        name: "Shoply",
+        libraries: "Frontend: React, reactstrap, json-server back-end",
+        frontend: "React, Redux, reactstrap",
+        backend: "",
+        github:"www.github.com/FIXME",
+        demo: "www.FIXME.com",
+        description: " A small shopping website mockup",
         updated: "September 2020",
       },
+
       {
-        name: "algorithm index",
-        libraries: "FIXME, ?javascript? codepen? github?? react??",
-        link: "",
-        description:
-          " A single-page-app that highlights patterns, search algorithms, and data structure   ",
-        updated: "September 2020",
-      },
-      {
-        name: "livestack",
-        libraries: "React, reactstrap, json-server back-end",
-        link: "",
+        name: "Livestack",
+        frontend: "React",
+        backend: "Express, Node.js",
+        github:"www.github.com/FIXME",
+        demo: "www.FIXME.com",
         description:
           " Employed test-driven development practices to refactor components for testability and maintainability",
-        updated: "September 2020",
-      }
+        updated: "October 2020",
+      },
+      {
+        name: "Algorithm collection ",
+        frontend: "",
+        backend: "",
+        github:"",
+        demo: "www.FIXME.com",
+        description:
+          " HONORABLE MENTION: Demo patterns, search algorithm, and data structure implementations",
+        updated: "October 2020",
+      },
     ];
     return res;
   }
-  
+
 
   static async getStack() {
     const res = await axios.get(`${BASE_API_URL}/techStack`);
@@ -81,4 +91,4 @@ const BASE_API_URL = "http://localhost:5000";
     return res;
   }
 
- }
+}

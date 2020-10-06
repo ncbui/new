@@ -1,9 +1,14 @@
 {
-    "homepage": "http://ncbui.github.io/",
+  "homepage": "http://ncbui.github.io/planning",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -24,8 +29,8 @@
     "eject": "react-scripts eject",
     "start-fe": "react-scripts start",
     "start-be": "json-server --watch db.json --delay 500 --port 5000",
-      "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
