@@ -21,7 +21,7 @@ export default function Navigation() {
   return (
       // <Navbar light expand="lg" className="Navigation fixed-top col-12">
       <Navbar light className="Navigation fixed-top col-12">
-      <NavbarBrand href="/">Cam Bui</NavbarBrand>
+      <NavbarBrand href="/"><h1>Hello.</h1></NavbarBrand>
         <NavbarToggler onClick={toggle} /> 
 
         <Collapse isOpen={isOpen} navbar >

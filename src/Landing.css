@@ -1,15 +1,33 @@
 .Landing {
     height: 100vh;
-    display: flex;
-    align-items: center;
 }
 
 .Landing-container {
     height: 60vh;
-    padding: 20vh 24px;
+    width: 600px;
+    position: absolute;
+    bottom: -10vh;
+    left: 30%;
+    padding: 72px 8px;
 }
 
-h6 {
-    display: inline-block;
-    margin-right: 10px;
+.Landing-header {
+    width: 400px;
+    position: absolute;
+    left: 30%;
+}
+
+img {
+    width: 300px;
+    position: absolute;
+    right: 450px;
+    top: -13%;
+}
+
+img:before {
+    content:"";
+    background-color: rgb(110, 126, 140, .9);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }

@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+
+:root{
+    --thistle: #D8C1D9;
+    --gray: rgb(110, 126, 140);
+    --offwhite: #F0F1F2;
+    --green: #078C7F;
+    --brown: #A66A65;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Calibri', 'Nunito Sans', sans-serif;
+  background-color: var(--offwhite);
+  font-size: 22px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,10 +24,21 @@ code {
     monospace;
 }
 
+h1 {
+    font-family: 'Oranienbaum', serif;
+    font-weight: bold;
+}
+
+
+h4 {
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+}
+
+
 .container {
-    background-color: thistle;
-    color: teal;
-    border-radius: 1rem;
+    background-color: var(--thistle);
+    color: var(--green);
     margin: 16vh 0;
 }
 

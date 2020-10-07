@@ -1,3 +1,9 @@
-.Navigation {
-    background-color: thistle;
+.navbar {
+    /* background-color: thistle; */
+    color: var(--green);
+}
+
+.navbar-brand h1 {
+    font-size: 70px;
+    color: var(--green);
 }

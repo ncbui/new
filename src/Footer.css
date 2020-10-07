@@ -3,10 +3,11 @@
     font-size: 30px;
     position: relative;
     margin: 5px;
+    color: var(--green);
 }
 
 .Footer {
-    background-color: thistle;
+    /* background-color: thistle; */
     color: slategray;
 }
 
