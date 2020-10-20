@@ -35,21 +35,21 @@ export default class portfolioApi {
         backend: "Flask, Jinja, postgreSQL DB",
         github:"https://github.com/ncbui/Warbler",
         demo: "",
-        description: " twitter clone with authentication middleware, Bcrypt, and PostgreSql database",
+        description: " Twitter clone with authentication middleware, Bcrypt hashing, and postgreSQL database",
         updated: "September 2020",
       },
       {
         name: "Jobly API",
         backend: "Node.js, Express, PostgreSQL",
         github:"https://github.com/tm-1900/jobly",
-        description: " A RESTful API built with Express and PostgreSql database",
+        description: " A RESTful API built with Node.js, Express and postgreSQL database",
         updated: "September 2020",
       },
       {
         name: "Jobly React App",
         frontend: "React, Redux, React Router",
         github:"https://github.com/w12190/react-jobly",
-        description: " A small shopping website built with AJAX calls to an API and filtered search feature",
+        description: " A small shopping website with filtered search, client-side rendering, and AJAX calls to an API",
         updated: "September 2020",
       }
     ];
@@ -74,6 +74,10 @@ export default class portfolioApi {
       {
         site: "www.linkedin.com/in/cambui",
         icon: ['fab', 'linkedin']
+    },
+      {
+        site: "mailto:bui.nct@gmail.com",
+        icon: ['fas', 'envelope']
       }];
     return res;
   }

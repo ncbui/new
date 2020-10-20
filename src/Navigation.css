@@ -2,11 +2,10 @@
     z-index: 5;
     font: 'Calibri';
     font-size: larger;
-    margin-top: -5vh;
+    margin-top: -11vh;
     background-color: var(--violet);
     padding: 20px;
-    /* border-bottom: 1vw solid var(--violet); */
-    border-bottom: .5vw solid var(--mac);
+    border-bottom: .8vw solid var(--mac);
     box-shadow: 5px 5px 5px #888888;
 }
 
@@ -21,7 +20,16 @@
 }
 
 .Nav-toggler {
-    /* border: 10px solid var(--offwhite); */
     background-color: var(--offwhite);
     color: var(--mac);
+}
+
+.circle:hover {
+    border-radius: 50%;
+    transition:all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    border-radius: 50%;
+    transition:all 0.3s ease;
 }

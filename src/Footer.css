@@ -11,3 +11,7 @@
 .Footer a {
     color: var(--mac);
 }
+
+.Footer-contact-list {
+    list-style: none;
+}

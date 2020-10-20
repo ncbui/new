@@ -110,7 +110,7 @@ a:hover {
 .section-top-left {
     max-width: 300px;
     display: relative;
-    top: 100px;
+    top: 0px;
     left: -100px;
     z-index: 5;
     padding: 0;

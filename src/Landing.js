@@ -10,7 +10,7 @@ import {
   CardText,
 } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import headshot from './headshot-2020-Nov.png';
+import headshot from './0.jpeg';
 import './Landing.css';
 
 /**Renders a collection of components */
@@ -53,7 +53,7 @@ export default function Landing() {
               />
             </CardText>
             <br />
-            <a className="btn" href="http://www.github.com/ncbui"><h5>See my work</h5></a>
+            <a className="btn border" href="http://www.github.com/ncbui">See my code</a>
           </CardBody>
         </Card>
       </div>

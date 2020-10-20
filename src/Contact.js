@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <Container className="Contact ml-auto text-right">
     {
-        contactInfo.map(point => <a href={point.link}>
+        contactInfo.map(point => <a href={point.site}>
           <FontAwesomeIcon
             icon={point.icon}
             className="Contact-icon"

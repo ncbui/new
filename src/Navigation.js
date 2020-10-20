@@ -23,7 +23,7 @@ export default function Navigation() {
     <Navbar fluid light className="Navigation col-12" expand="xl">
       <NavbarBrand href="/">
       </NavbarBrand>
-        <NavbarToggler onClick={toggle} className="Nav-toggler"/> 
+        <NavbarToggler onClick={toggle} className="Nav-toggler circle"/> 
 
         <Collapse isOpen={isOpen} navbar >
           <Nav className="Navigation-navbar text-center mx-auto" navbar>

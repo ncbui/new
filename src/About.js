@@ -9,7 +9,7 @@ import {
   CardImg
 } from 'reactstrap';
 import './About.css';
-import headshot from './headshot-2020-Nov.png';
+import headshot from './0.jpeg';
 
 
 /**Renders a collection of components */
