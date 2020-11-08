@@ -13,7 +13,7 @@ import './App.css';
  */
 export default function App() {
   return (
-      <div fluid className="App">
+      <div className="App">
       <Landing />
       <About />
       <Projects />

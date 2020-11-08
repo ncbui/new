@@ -15,29 +15,32 @@ export default function About() {
     <section className="About section section-filled jumbotron" id="About">
       <Container>
         <main className="col-12 col-lg-8 mx-auto">
-          <Fade>
+          <Fade delay={100}>
             <h2 className="section-title">About Me</h2>
           </Fade>
           <Row>
             <Fade bottom>
-              <div className="col-lg-6 col-12 text-right">
+              <div className="col-lg-6 col-12">
                 <img
-                  src=""
+                  src={headshot}
                   className="About-img"
                   alt="close up on Cam from the shoulders up, circa November 2019"
                 />
               </div>
             </Fade>
-            <Fade left>
+            <Fade left delay={800}>
               <div className="col-lg-6 col-12">
                 <p>
-                  In my spare time I paint and turn leftovers into gold with vermiculture.In my spare time I paint and turn leftovers into gold with vermiculture.In my spare time I paint and turn leftovers into gold with vermiculture.
-          </p>
+                I'm a process-oriented person who enjoys building little helpers
+                </p>
                 <p>
-                  In my spare time I paint and turn leftovers into gold with vermiculture.In my spare time I paint and turn leftovers into gold with vermiculture.In my spare time I paint and turn leftovers into gold with vermiculture.
-          </p>
+                I have a background in IT support and psychological research.
+                </p>
+                <p>
+                In my spare time I paint and turn leftovers into gold with vermiculture.
+                </p>
                 <br />
-                <a href="" className="btn btn-lined"><h4>Resume</h4></a>
+                <a href="/" className="btn btn-lined">Resume</a>
               </div>
             </Fade>
           </Row>

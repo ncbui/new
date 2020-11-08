@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Changa:wght@800&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&family=Changa:wght@600&family=Open+Sans&family=Roboto&display=swap');
 
 
 :root{
 /* --dark: #355070ff; */
 --mid-one: #b56576ff;
---dark: #1F090E;
+--dark: #210810;
 --mid-four: #5602B0;
---mid-three: #02aab0;
---bright: #e56b6fff;
---light: #ffffff;
---gradient: linear-gradient(135deg,var(--mid-four), var(--mid-three), var(--mid-three));
+--mid-three: #07a0c3;
+--bright: #CF3A69 ;
+--light: rgb(256,256,256,.9);
+--gradient: linear-gradient(175deg,var(--mid-three), var(--mid-four));
 }
 
 
@@ -23,7 +23,7 @@ body {
     overflow-x: hidden;
     background-color: var(--mid-four);
     background-image: var(--gradient);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
   /* 
   -webkit-background-size: cover;
@@ -38,6 +38,10 @@ h1 {
     color: var(--dark);
     font-family: 'Changa', sans-serif;
 
+}
+
+h1 span {
+    color: var(--mid-four);
 }
 
 h2 {
@@ -67,34 +71,91 @@ h5 {
     color: var(--light);
 }
 
+a {
+    color: var(--dark)
+}
+a:hover {
+    text-decoration: none;
+    color: var(--light);
+}
 .btn {
-    font-size: 26px;
+    font-size: 28px;
     text-align: center;
     border: 4px solid var(--mid-four);
     border-radius: 0;
     font-family: 'Changa', sans-serif;
     color: var(--mid-four);
     background-color: transparent;
+    overflow: hidden ;
+    position: relative;
     letter-spacing: 2px;
     padding: 12px 24px;
-    cursor: pointer;
-    display: inline-block;
+
+    /* animate and time the transitions*/
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateZ(0);
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 102%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: var(--mid-four);
+    }
+
+.btn:hover:after,
+.btn:active:after{
+    height: 102%;
 }
 
 .btn-covered {
-    background-color: var(--light);
+    background-color: rgb(256, 256, 256, .4);
     border: 4px solid var(--mid-four);
-    color: var(--mid-four);
 }
+
+.btn-covered:hover {
+    color: var(--light);
+    height: 102%;
+}
+
+
+
 
 .btn-lined {
     border-color: var(--light);
+    color: var(--light);
 }
+
+.btn-lined:hover{
+    color: var(--mid-four);
+}
+
+.btn-lined:after {
+    background-color: var(--light);
+    }
 
 .btn-empty {
     border-color:  transparent;
 }
 
+.btn-empty:hover {
+    color: var(--mid-three)
+}
+
+.btn-empty:after {
+    border-color:  transparent;
+    background-color: transparent;
+    color: var(--mid-three)
+}
 
 /* Landing doesn't have a section or container*/
 .section {
@@ -114,7 +175,7 @@ h5 {
 }
 
 .section-cover {
-    background-color: #fff;
+    background-color: var(--light);
 }
 
 .container {
@@ -139,7 +200,13 @@ h5 {
 }
 
 .Project {
-    margin: 10vh 0;
+    margin: .5rem 0;
+    background-color: rgb(256, 256, 256, .4);
+    padding: 2rem;
+}
+
+.Projects {
+    background-color: rgb(256, 256, 256, .3);
 }
 
 .Footer {
@@ -150,6 +217,26 @@ h5 {
 
 .Footer a {
     color: var(--light);
+    text-decoration:none;
+}
+
+.Footer-contact a:hover {
+    color: var(--light);
+    font-size: 110%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.Footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#back-to-top{
+    font-size: 80px;
 }
 
 .Contact {
@@ -157,10 +244,6 @@ h5 {
     align-items: center;
 }
 
-.Landing span {
-    color: var(--mid-four)
-}
-
 .Landing {
-    background-color: #fff;
+    background-color: var(--light)
 }
