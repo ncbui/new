@@ -1,55 +1,61 @@
 import React from "react";
-import { Row, Col } from "reactstrap";
+import { Row, Container } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Footer.css'
 
-const contactInfo = [{
-  name: "GitHub",
-  site: "www.github.com/ncbui",
-  icon: ['fab', 'github']
-},
-{
-  name: "LinkedIn",
-  site: "www.linkedin.com/in/cambui",
-  icon: ['fab', 'linkedin']
-},
-{
-  name: "bui.nct@gmail.com",
-  site: "mailto:bui.nct@gmail.com",
-  icon: ['fas', 'envelope']
-}
-]
 
 /**Renders a collection of components */
 export default function Footer() {
 
   return (
-    <div fluid className="Footer col-12 align-bottom">
-      <Row>
-        <Col className="Footer-col col-6 text-left">
+    <section className="Footer align-bottom">
+      <Container>
+        <main>
+          <h2 id="back-to-top">
+            <a href="">
+              <FontAwesomeIcon
+                icon={['faSortUp']}
+                size="3x"
+                fixedWidth
+              />
+            </a>
+        </h2>
+        <h2>
+          <a href="https://github.com/ncbui">
+            <FontAwesomeIcon
+              icon={['fab', 'github']}
+              className="Landing-icon"
+              size="1x"
+              fixedWidth
+            />
+          </a>
+          
+          <a href="https://www.linkedin.com/in/cambui/">
+            <FontAwesomeIcon
+              icon={['fab', 'codepen']}
+              className="Landing-icon"
+              size="1x"
+              fixedWidth
+            > 3 </FontAwesomeIcon>
+          </a>
+          <a href="https://www.linkedin.com/in/cambui/">
 
+            <FontAwesomeIcon
+              icon={['fab', 'linkedin']}
+              className="Landing-icon"
+              size="1x"
+              fixedWidth
+            />
+          </a>
+        </h2>
+        <hr />
+        <h4>
           <small className="Footer-notes-text">
-            © Cam Bui, 2020 <br />
-            Based on design by <a href="FIXME"> Mad X </a>
-          </small>
-        </Col>
-        <Col className="Footer-col col-6 text-right">
-          <h5><b>Contact Me</b></h5>
-          <small className="Footer-notes-text">
-            <ul className="Footer-contact-list">
-              <li>
-                <a href="https://github.com/ncbui"> github </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/cambui/"> linkedin </a>
-              </li>
-              <li>
-                <a href="mailto:bui.nct@gmail.com"> bui.nct@gmail.com </a>
-              </li>
-            </ul>
-          </small>
-        </Col>
-      </Row>
-
-    </div>
+            © Cam Bui, 2020
+        </small>
+        </h4>
+        </main>
+      </Container>
+    </section>
   )
 }

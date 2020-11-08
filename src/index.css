@@ -3,131 +3,137 @@
 
 
 :root{
-    --thistle: #D8C1D9;
-    --gray: rgb(110, 126, 140);
-    --offwhite: rgb(250, 248, 239);
-    --green: #078C7F;
-    --brown: #A66A65;
-    /* --terracotta: #ED6A5A; */
-    /* --mac: #faae7b; */
-    --mac: #E9B44C;
-    --metallic-seaweed: rgb(25, 139, 151);
-
-    --mauve: rgb(58, 23, 33);
-    /* --electric: rgb(9, 192, 195); */
-    --violet: rgb(37, 24, 37);
-    --rosedust: #9f6976;
-    --middlered: rgb(238, 217, 211);
+/* --dark: #355070ff; */
+--mid-one: #b56576ff;
+--dark: #1F090E;
+--mid-four: #02aab0;
+--mid-three: #02aa6b;
+--bright: #e56b6fff;
+--light: #ffffff;
+--gradient: linear-gradient(135deg,var(--mid-four),var(--mid-three));
 }
+
+
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: var(--light);
+  /* 
   font-family: 'Calibri', 'Nunito Sans', sans-serif;
-  background-color: var(--offwhite);
-  color: var(--mauve);
-  font-size: 1.4rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-      background: 
-        linear-gradient(
-        rgb(250, 248, 239, .7), 
-        rgb(250, 248, 239, .9)),
-        url(bg.jpg) center right;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
 }
 
 h1 {
-    font-family: 'Oranienbaum', serif;
-    font-weight: bold;
-    /* font-size: 3rem; */
+    font-size: 70px;
+    color: var(--dark);
 }
 
 h2 {
-    font-family: 'Oranienbaum', serif;
-    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 5vh;
 }
 
 h3 {
-    font-family: 'Calibri', 'Nunito Sans', sans-serif;
-    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 5vh;
 }
 
-
 h4 {
-    font-family: 'Calibri', 'Nunito Sans', sans-serif;
-    min-width: min-content;
-    margin: 5vh 0;
+    font-size: 30px;
+    text-align: center;
+    color: var(--light);
 }
 
 h5 {
-    font-family: 'Calibri', 'Nunito Sans', sans-serif;
-    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: var(--light);
 }
 
 .btn {
-    background-color: var(--violet);
-    border: 1vw solid var(--violet);
-    margin: 0 1vw;
-    box-shadow: 5px 1px 10px #888888;
-    font-size: 1.1rem;
-}
-
-.card {
-    background: transparent;
-    border: 5px solid var(--violet);
-    display: inline-flex;
-    flex-direction: row;
-    padding: 5vh 1vw;
+    font-size: 26px;
+    text-align: center;
+    border: 4px solid var(--mid-three);
     border-radius: 0;
-    box-shadow: 5px 5px 5px #888888;
 }
 
+.btn-filled {
+    background-color: var(--mid-four);
+    background-image: var(--gradient);
+    border: 4px solid var(--light);
+}
 
-.card-img {
+.btn-lined {
+    border-color: var(--mid-three);
     background-color: transparent;
 }
 
-.section-container {
+.btn-empty {
+    border-color:  transparent;
+}
+
+
+/* Landing doesn't have a section or container*/
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.section-filled {
+    background-color: var(--mid-four);
+    background-image: var(--gradient);
+    color: var(--light);
+}
+
+.section-clear {
+    
+}
+
+.container {
+    border: 10px solid thistle;
+}
+
+
+.jumbotron {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+.Project-img{
+    background-color: var(--dark);
+    box-shadow: 1px 1px 6px var(--mid-two);
+    min-height: 20vh;
+}
+
+.Project {
+    margin: 10vh 0;
+}
+
+.Footer {
+    background-color: var(--dark);
+    color: var(--light);
     margin: 0;
     padding: 0;
 }
 
-a, li a {
-    color: var(--mac);
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-
-.section-top-left {
-    max-width: 300px;
-    display: relative;
-    top: 0px;
-    left: -100px;
-    z-index: 5;
-    padding: 0;
-    margin: 0;
-}
-
-.section-bottom-right {
-    padding-left: 200px;
-    min-height: 300px;
-    bottom: 20vh;
-    display: relative;
-    z-index: 1;
-}
-
-.section-bottom-center {
-    min-height: 100px;
-    z-index: 1;
-    padding: 0; 
-    margin: 0;
+.Footer a {
+    color: var(--light);
 }

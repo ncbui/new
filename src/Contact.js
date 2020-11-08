@@ -1,37 +1,26 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Container } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import './Contact.css';
 import portfolioApi from './Api';
 
-const contactInfo = [{
-  site: "http://www.github.com/ncbui",
-  icon: ['fab', 'github']
-},
-{
-  site: "http://www.linkedin.com/in/cambui",
-  icon: ['fab', 'linkedin']
-},
-  {
-    name: "bui.nct@gmail.com",
-    site: "mailto:bui.nct@gmail.com",
-    icon: ['fas', 'envelope']
-  }]
+
+
 
 /**Renders Footer fixed to the bottom of the viewport */
 export default function Contact() {
   return (
-    <Container className="Contact ml-auto text-right">
-    {
-        contactInfo.map(point => <a href={point.site}>
-          <FontAwesomeIcon
-            icon={point.icon}
-            className="Contact-icon"
-            size="2x"
-            fixedWidth
-          />
-        </a>)
-    }
-    </Container>
+    <section id="contact" className="Contact section-filled">
+      <Container>
+        <main className="text-center">
+          <h2 className="section-title">Contact</h2>
+          <h3>
+            Would you like to work with me? Wonderful!
+          </h3>
+            <div>
+            <a className="btn btn-filled" href=""> <h4>Let's Talk</h4></a>
+            </div>
+        </main>
+      </Container>
+    </section>
   )
 }

@@ -1,24 +1,24 @@
 import React from "react";
-import './App.css';
-
+import Landing from './Landing';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
 import Footer from './Footer';
-import Routes from './Routes';
-import Navigation from './Navigation';
-import { Container } from "reactstrap";
-import SinglePageScroll from './SinglePageScroll';
+import './App.css';
 
 /** Renders App
  * 
  * 
- *  App -> { Navigation, SinglePageScroll }
+ *  App -> { SinglePageScroll }
  */
 export default function App() {
   return (
-      <Container fluid className="App">
-        <main>
-        <Routes />
-        </main>
-        <Footer />
-      </Container>
+      <div fluid className="App">
+      <Landing />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+      </div>
   );
 }

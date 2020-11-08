@@ -1,5 +1,5 @@
-
-.About-bottom {
-    flex-direction: row;
-    background-color: rgb(250, 248, 239, .7);
+.About-img {
+    background-color: black;
+    min-height: 40vh;
+    min-width: 10vw;
 }
