@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import { Row, Container } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Footer.css'
@@ -11,6 +12,7 @@ export default function Footer() {
     <section className="Footer align-bottom">
       <Container>
         <main>
+          <Fade bottom cascade> 
           <h2 id="back-to-top">
             <a href="">
               <FontAwesomeIcon
@@ -54,6 +56,7 @@ export default function Footer() {
             © Cam Bui, 2020
         </small>
         </h4>
+          </Fade>
         </main>
       </Container>
     </section>
