@@ -24,9 +24,7 @@ body {
     background-color: var(--mid-four);
     background-image: var(--gradient);
     font-family: 'Roboto', sans-serif;
-
-  /* 
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; */
@@ -116,6 +114,7 @@ a:hover {
 .btn:hover:after,
 .btn:active:after{
     height: 102%;
+    transform: scale(1.2)
 }
 
 .btn-covered {
@@ -127,9 +126,6 @@ a:hover {
     color: var(--light);
     height: 102%;
 }
-
-
-
 
 .btn-lined {
     border-color: var(--light);
@@ -167,6 +163,7 @@ a:hover {
     padding-top: 20vh;
     padding-bottom: 20vh;
     min-height: fit-content;
+    margin: 1vh 0;
 }
 
 .section-filled {
@@ -223,7 +220,7 @@ a:hover {
 
 .Footer-contact a:hover {
     color: var(--light);
-    font-size: 110%;
+    transform: scale(1.2);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -251,7 +248,7 @@ a:hover {
 
 .About-img {
     margin-bottom: 2rem;
-    height: auto;
-    width: 80% ;
     border-radius: 3%;
+    max-height: 300px;
+    max-width: 300px;
 }

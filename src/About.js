@@ -15,7 +15,7 @@ export default function About() {
     <section className="About section section-filled jumbotron" id="About">
       <Container>
         <main className="col-12 col-md-8 mx-auto">
-          <Fade delay={50}>
+          <Fade>
             <h2 className="section-title">About Me</h2>
           </Fade>
           <Row>
@@ -31,7 +31,7 @@ export default function About() {
             <Fade left delay={100} duration={2000}>
               <div className="About-details col-lg-6 col-12">
                 <p>
-                I'm a software developer based in San Jose, CA.
+                I'm a software developer based in the SF/Oakland Bay Area, CA, USA.
                 </p>
                 <p>
                 I have a background in IT support and psychological research. I get a kick out of building tools to help us reshape our inner and outer worlds.
