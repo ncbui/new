@@ -4,7 +4,6 @@ import NavBar from './NavBar';
 import Resume from './Resume';
 import Projects from './Projects';
 import Home from './Home';
-import Contact from './Contact';
 import Landing from './Landing';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
@@ -23,7 +22,6 @@ function App({ projects, about, contact, resume }) {
       <Switch>
           <Route exact path="/resume"> <Resume data={resume}/> </Route>
           <Route exact path="/projects"> <Projects data={projects}/> </Route>
-          <Route exact path="/contact"> <Contact data={contact}/> </Route>
             <Route exact path="/"> <Home data={{about, projects}}/> </Route>
         <Redirect to="/" />
       </Switch>
