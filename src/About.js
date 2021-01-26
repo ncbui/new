@@ -6,6 +6,7 @@ import {
 } from 'reactstrap';
 import './About.css';
 import headshot from './0.jpeg';
+import resume from './resume.pdf'
 
 
 /**Renders a collection of components */
@@ -34,13 +35,13 @@ export default function About() {
                 I'm a software developer based in the SF/Oakland Bay Area, CA, USA.
                 </p>
                 <p>
-                I have a background in IT support and psychological research. I get a kick out of building tools to help us reshape our inner and outer worlds.
+                I have a background in desktop support and psychological research. I get a kick out of building tools to help us reshape our inner and outer worlds.
                 </p>
                 <p>
                 In my spare time I paint and turn leftovers into gold with vermiculture.
                 </p>
                 <br />
-                <a href="/" className="btn btn-lined">Resume</a>
+                <a href={resume} className="btn btn-lined" download>Resume</a>
               </div>
             </Fade>
           </Row>
