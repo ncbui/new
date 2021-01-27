@@ -35,13 +35,13 @@ export default function About() {
                 I'm a software developer based in the SF/Oakland Bay Area, CA, USA.
                 </p>
                 <p>
-                I have a background in desktop support and psychological research. I get a kick out of building tools to help us reshape our inner and outer worlds.
+                I have a background in desktop support and psychological research. I get a kick out of building tools to help people reshape our inner and outer worlds.
                 </p>
                 <p>
                 In my spare time I paint and turn leftovers into gold with vermiculture.
                 </p>
                 <br />
-                <a href={resume} className="btn btn-lined">Resume</a>
+                <a href={resume} className="btn btn-lined" download>Resume</a>
               </div>
             </Fade>
           </Row>
