@@ -73,3 +73,203 @@ Migrating to CreateContacts (20210407032453)
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5160695226164068290)[0m
   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-04-06 20:33:43 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.1ms | Allocations: 295)
+Completed 200 OK in 19ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 1708)
+
+
+Started GET "/contact" for 127.0.0.1 at 2021-04-06 20:33:47 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/contact"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 20:34:59 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (4.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1502)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/zz/Documents/projects/portfolio/public/packs
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: f86639f4459f31b34f60
+Version: webpack 4.46.0
+Time: 1602ms
+Built at: 04/06/2021 8:35:04 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-07e792d2b65403c647a1.js    124 KiB  application  [emitted] [immutable]  application
+js/application-07e792d2b65403c647a1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-07e792d2b65403c647a1.js js/application-07e792d2b65403c647a1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 4099ms (Views: 4086.3ms | ActiveRecord: 6.0ms | Allocations: 24053)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-04-06 20:35:13 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/_form.html.erb (Duration: 18.5ms | Allocations: 4376)
+  Rendered contacts/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 4716)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 28.5ms | ActiveRecord: 3.5ms | Allocations: 11941)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-04-06 20:35:48 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"bUjaAWuwz1LueWczJXKtlFXjRsNJci7IVG8vtXnr9+n7cyuR19OQmZuEFhytbcf0Exne9+DJduYaK4x5Op4rug==", "contact"=>{"site"=>"LinkedIn", "url"=>"https://www.linkedin.com/in/cambui/", "icon"=>""}, "commit"=>"Create Contact"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+  [1m[36mContact Create (1.9ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "icon", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["icon", ""], ["created_at", "2021-04-07 03:35:48.175823"], ["updated_at", "2021-04-07 03:35:48.175823"]]
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/contacts/1
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms | Allocations: 3077)
+
+
+Started GET "/contacts/1" for 127.0.0.1 at 2021-04-06 20:35:48 -0700
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContact Load (2.8ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  Rendering contacts/show.html.erb within layouts/application
+  Rendered contacts/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 18.3ms | ActiveRecord: 3.2ms | Allocations: 5335)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 20:35:50 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (2.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.0ms | ActiveRecord: 2.7ms | Allocations: 4753)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-04-06 20:36:11 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/_form.html.erb (Duration: 4.0ms | Allocations: 867)
+  Rendered contacts/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 949)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 4883)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-04-06 20:36:15 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"kK98OYigds0akdEQ9h7LQ5TwaNdkPz7Y4FCDzzzKAbwGlI2pNMMpBm9soD9+AaEj0grw482EZvauFCADf7/d7w==", "contact"=>{"site"=>"LinkedIn", "url"=>"https://www.linkedin.com/in/cambui/", "icon"=>""}, "commit"=>"Create Contact"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+  [1m[36mContact Create (0.9ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "icon", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["icon", ""], ["created_at", "2021-04-07 03:36:15.189880"], ["updated_at", "2021-04-07 03:36:15.189880"]]
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/contacts/2
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms | Allocations: 2852)
+
+
+Started GET "/contacts/2" for 127.0.0.1 at 2021-04-06 20:36:15 -0700
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  Rendering contacts/show.html.erb within layouts/application
+  Rendered contacts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 4618)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 20:36:16 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (2.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 926)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 2.2ms | Allocations: 4876)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2021-04-06 20:36:18 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/_form.html.erb (Duration: 4.9ms | Allocations: 865)
+  Rendered contacts/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 947)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 4888)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2021-04-06 20:36:21 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"authenticity_token"=>"7AG65w0/KNv+zhXVJnm1Mk2unt7EhAbfgiYCwRFzQwF6Okt3sVx3EIszZPquZt9SC1QG6m0/XvHMYqENUgafUg==", "contact"=>{"site"=>"LinkedIn", "url"=>"https://www.linkedin.com/in/cambui/", "icon"=>""}, "commit"=>"Create Contact"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+  [1m[36mContact Create (2.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "icon", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["icon", ""], ["created_at", "2021-04-07 03:36:21.416004"], ["updated_at", "2021-04-07 03:36:21.416004"]]
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/contacts/3
+Completed 302 Found in 12ms (ActiveRecord: 2.9ms | Allocations: 2842)
+
+
+Started GET "/contacts/3" for 127.0.0.1 at 2021-04-06 20:36:21 -0700
+Processing by ContactsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  Rendering contacts/show.html.erb within layouts/application
+  Rendered contacts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.3ms | Allocations: 4632)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 20:36:23 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (3.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 3.3ms | Allocations: 5018)
+
+
