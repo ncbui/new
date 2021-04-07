@@ -3549,3 +3549,1329 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.5ms | Allocations: 6582)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-06 22:39:55 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 5934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 386)
+Completed 200 OK in 80ms (Views: 64.2ms | ActiveRecord: 5.8ms | Allocations: 16078)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 22:39:58 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BJ5kEGKcZLlabw9cv5EPOyP5EkJ4kPwMSfolIwgRexAlFNta96QCpomwGogRnww/J7crc8PB6MWNyPKfrxMqUw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 30ms (ActiveRecord: 3.7ms | Allocations: 9530)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 22:39:58 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.6ms | Allocations: 5802)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:40:16 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (1.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 4917)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 191)
+Completed 200 OK in 44ms (Views: 32.5ms | ActiveRecord: 6.3ms | Allocations: 10242)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:40:18 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4004)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 191)
+Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 3.8ms | Allocations: 9813)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:18 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 6892)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 191)
+Completed 200 OK in 38ms (Views: 30.9ms | ActiveRecord: 4.7ms | Allocations: 12184)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:40:19 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (2.9ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 191)
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 2.9ms | Allocations: 5247)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:40:20 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 191)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 1.6ms | Allocations: 5790)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:40:21 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (5.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 805)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 190)
+Completed 200 OK in 20ms (Views: 14.1ms | ActiveRecord: 5.2ms | Allocations: 5240)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:40:22 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 191)
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 2.7ms | Allocations: 5466)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:23 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (3.6ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 3357)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 190)
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 3.6ms | Allocations: 7783)
+
+
+Started DELETE "/contacts/8" for 127.0.0.1 at 2021-04-06 22:40:27 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DZg1BLihASPAiqXcaqwDwvMJTjxQMZL2Idw8g+fKHhIh16a1mhdT7ZZGtOdz90mj4pRHOcJKi4sFCzm5yEzRCQ==", "id"=>"8"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (0.7ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 12ms (ActiveRecord: 2.7ms | Allocations: 3011)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:27 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (1.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 3231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 190)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 1.2ms | Allocations: 7668)
+
+
+Started DELETE "/contacts/5" for 127.0.0.1 at 2021-04-06 22:40:28 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3ZLqqZ1TdLTN0RJUoqQoR5PPeoFo0qBslu12PoWVbTDx3XkYv+UmepsdA2+7/2ImglJzhPqpuRGyOnMEqhOiKw==", "id"=>"5"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.0ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 13ms (ActiveRecord: 3.3ms | Allocations: 2874)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:28 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.8ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 190)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.8ms | Allocations: 7560)
+
+
+Started DELETE "/contacts/7" for 127.0.0.1 at 2021-04-06 22:40:31 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dX0dSpKjzzGFrkm5ZFxTsq6xVXt1M++bquo2WwPWbqVZMo77sBWd/9NiWIJ9BxnTvyxcfudI9uaOPTNhLFChvg==", "id"=>"7"}
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (0.9ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 13ms (ActiveRecord: 3.8ms | Allocations: 2866)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:31 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2975)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 190)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.7ms | Allocations: 7422)
+
+
+Started DELETE "/contacts/12" for 127.0.0.1 at 2021-04-06 22:40:33 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pU2HresNwifiLmdyP2FAJaDaeTW4hfopkilbpuRb3COJAhQcybuQ6bTidkkmOgpEsUdwMCr+41S2/l6cy90TOA==", "id"=>"12"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.1ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms | Allocations: 2868)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:33 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (21.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 30.0ms | Allocations: 2847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 190)
+Completed 200 OK in 46ms (Views: 23.9ms | ActiveRecord: 21.3ms | Allocations: 7288)
+
+
+Started DELETE "/contacts/9" for 127.0.0.1 at 2021-04-06 22:40:36 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PB47E+Pwlb0LuDO43CNEZMWZRvmk9OBWdkl/IfJKTBUQUaiiwUbHc110IoPFeA4F1ARP/DaP+StSnnob3cyDDg==", "id"=>"9"}
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.1ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 11ms (ActiveRecord: 2.2ms | Allocations: 2874)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:36 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (1.0ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2719)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 190)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 1.0ms | Allocations: 7168)
+
+
+Started DELETE "/contacts/10" for 127.0.0.1 at 2021-04-06 22:40:39 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MZ0zpf00zVMu+k0zOCEC8gUGZN2xPkCkzogNGdLu/Jsd0qAU34KfnXg2XAghekiTFJtt2CNFWdnqXwgj/WgzgA==", "id"=>"10"}
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (0.9ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms | Allocations: 2858)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:39 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.9ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.9ms | Allocations: 7054)
+
+
+Started DELETE "/contacts/18" for 127.0.0.1 at 2021-04-06 22:40:42 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LkbI3+uPNBtsEo8KiEqTeukSREPmLfLDknNrbEJ400cCCVtuyTlm1TrenjGREdkb+I9NRnRW6762pG5Wbf4cXA==", "id"=>"18"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (0.4ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 11ms (ActiveRecord: 3.6ms | Allocations: 2863)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:42 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2463)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 6933)
+
+
+Started DELETE "/contacts/19" for 127.0.0.1 at 2021-04-06 22:40:44 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cVk1fYsENHU/SS2UQWYefxuBrmnR/JK8MuSfKAlx+dBdFqbMqbJmu2mFPK9YPVQeChynbEOHi8EWM5oSJvc2yw==", "id"=>"19"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (2.2ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 10ms (ActiveRecord: 3.1ms | Allocations: 2874)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:44 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.8ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.8ms | Allocations: 6796)
+
+
+Started DELETE "/contacts/17" for 127.0.0.1 at 2021-04-06 22:40:46 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ypQkdgEENcwnhN8U7NDdw5lE4yxJTU99gNvXGyLy+UTm27fHI7JnAnFIzi/1i5eiiNnqKds2VgCkDNIhDXQ2Xw==", "id"=>"17"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (2.0ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 13ms (ActiveRecord: 3.9ms | Allocations: 2858)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:46 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (1.5ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 190)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 1.5ms | Allocations: 6652)
+
+
+Started DELETE "/contacts/16" for 127.0.0.1 at 2021-04-06 22:40:48 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GmxRkQTA2oFP1XyOJ//10OR9jvrfXWrpmT2RactsF682I8IgJnaITxkZbbU+pL+x9eCH/00mc5S96pRT5OrYtA==", "id"=>"16"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.5ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 14ms (ActiveRecord: 5.3ms | Allocations: 2878)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:48 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.8ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 190)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.8ms | Allocations: 6532)
+
+
+Started DELETE "/contacts/21" for 127.0.0.1 at 2021-04-06 22:40:50 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wOwUA5Yg+0vcF8Sg0Xlj2461Q9us//SHmV+Es6ESU5jso4eytJaphYrb1ZvIIim6nyhK3j6E7fq9iIGJjpScgw==", "id"=>"21"}
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.0ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms | Allocations: 2872)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:50 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 190)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.4ms | Allocations: 6415)
+
+
+Started DELETE "/contacts/20" for 127.0.0.1 at 2021-04-06 22:40:52 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+7deB1UT5m4klxDgrIo+yLeT764FpJk0jIZTk/xoJ7LX+M22d6W0oHJbAdu10XSppg7mq5ffgEmoUVap0+7oqQ==", "id"=>"20"}
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (0.6ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms | Allocations: 2872)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:52 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (1.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1822)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 190)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 1.4ms | Allocations: 6290)
+
+
+Started DELETE "/contacts/22" for 127.0.0.1 at 2021-04-06 22:40:55 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P5ukge4ifIbEeGvW5UzUUknzgt7TjVCnURUz1VuQ0pwT1DcwzJQuSJK0eu38F54zWG6L20H2Sdp1wjbvdBYdhw==", "id"=>"22"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.1ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 10ms (ActiveRecord: 2.9ms | Allocations: 2864)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:55 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1694)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.5ms | Allocations: 6147)
+
+
+Started DELETE "/contacts/23" for 127.0.0.1 at 2021-04-06 22:40:57 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"21jkigbqHjY9HzcI1Q5Xjr95iKRvtHVaRlrw34qM5i/3F3c7JFxM+GvTJjPMVR3vruSBof3PbCdijfXlpQopNA==", "id"=>"23"}
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (1.4ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 11ms (ActiveRecord: 3.1ms | Allocations: 2860)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:57 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.5ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1566)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.5ms | Allocations: 6003)
+
+
+Started DELETE "/contacts/24" for 127.0.0.1 at 2021-04-06 22:40:58 -0700
+Processing by ContactsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rM2bQpAg8qCcQQZa4f/nScWqsxkktEu+TzDUKMOHlgaAggjzspagbsqNF2H4pK0o1De6HLbPUsNr59ES7AFZHQ==", "id"=>"24"}
+  [1m[36mContact Load (0.9ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/contacts_controller.rb:62:in `set_contact'
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[36mContact Destroy (2.4ms)[0m  [1m[31mDELETE FROM "contacts" WHERE "contacts"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contacts_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/contacts
+Completed 302 Found in 17ms (ActiveRecord: 7.4ms | Allocations: 2864)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:40:58 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (3.7ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1438)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 190)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 3.7ms | Allocations: 5905)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:41:00 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 190)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 1.7ms | Allocations: 5789)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:41:01 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1340)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 190)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.5ms | Allocations: 5761)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 22:41:02 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RwU7RYCs8IpzuhFCrREGRrc7urWAqJ5QMp98AGkmQyvksYnpSudbHKV4A+EtYSmd2ZhM2dVsleoM/FedWRao2g=="}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 463)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 22:41:02 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.5ms | Allocations: 5808)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 22:41:41 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 367)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms | Allocations: 7427)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 22:42:37 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 1097)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:42:37 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 21.7ms | Allocations: 2719)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 194)
+Completed 200 OK in 53ms (Views: 33.9ms | ActiveRecord: 2.7ms | Allocations: 12952)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:42:39 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1029)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 5712)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:42:41 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 189)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 5704)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:20 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 194)
+Completed 200 OK in 21ms (Views: 9.3ms | ActiveRecord: 3.3ms | Allocations: 10309)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:43:22 -0700
+Processing by ImagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:22 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 189)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 5755)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:43:23 -0700
+Processing by AboutsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 417)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:23 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 5734)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:43:25 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 407)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:25 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 189)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 5729)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:43:43 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 192)
+Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 4.0ms | Allocations: 9959)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:43:49 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 29.7ms | Allocations: 4767)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 191)
+Completed 200 OK in 54ms (Views: 45.3ms | ActiveRecord: 4.3ms | Allocations: 10116)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:43:50 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 3918)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 191)
+Completed 200 OK in 44ms (Views: 34.2ms | ActiveRecord: 3.2ms | Allocations: 9439)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:43:51 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 21.2ms | Allocations: 4869)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 191)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 2.7ms | Allocations: 10237)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:43:56 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 1091)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:56 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1052)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 194)
+Completed 200 OK in 25ms (Views: 13.1ms | ActiveRecord: 3.0ms | Allocations: 10251)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:43:58 -0700
+Processing by AboutsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:58 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5760)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:43:59 -0700
+Processing by ImagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:43:59 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 189)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 5753)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:44:00 -0700
+Processing by ContactsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 429)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:00 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 189)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 5742)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:44:01 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 189)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 5738)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:44:01 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:01 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 189)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5728)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:44:12 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:12 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 189)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 5740)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 22:44:14 -0700
+Processing by AboutsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 352)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:14 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 189)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 5748)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:44:14 -0700
+Processing by ImagesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:14 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5738)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:44:15 -0700
+Processing by ContactsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:15 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 189)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 5738)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 22:44:24 -0700
+Processing by ContactsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 1102)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:24 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1052)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 194)
+Completed 200 OK in 27ms (Views: 13.1ms | ActiveRecord: 4.0ms | Allocations: 10263)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 22:44:25 -0700
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 429)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 22:44:25 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 189)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 5758)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:46:24 -0700
+  
+NameError (uninitialized constant ApplicationController::SessionsHelper):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/images_controller.rb:1:in `<main>'
+Started GET "/images" for 127.0.0.1 at 2021-04-06 22:47:00 -0700
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:06:23 -0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (4.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 47.6ms | Allocations: 5934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 30.4ms | Allocations: 686)
+Completed 200 OK in 138ms (Views: 94.1ms | ActiveRecord: 19.1ms | Allocations: 16188)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:06:26 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (4.1ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 22.1ms | Allocations: 4934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 329)
+Completed 200 OK in 39ms (Views: 25.2ms | ActiveRecord: 8.2ms | Allocations: 10357)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 23:06:27 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (4.8ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 4003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 329)
+Completed 200 OK in 38ms (Views: 22.8ms | ActiveRecord: 8.2ms | Allocations: 9891)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2021-04-06 23:06:28 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (4.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  ↳ app/views/contacts/index.html.erb:16
+  Rendered contacts/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 4970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 329)
+Completed 200 OK in 41ms (Views: 25.7ms | ActiveRecord: 8.7ms | Allocations: 10384)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 23:06:32 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lCJOFuIpOCU8NlPkM7G8Y9FLpA9XTIfCRjnE/PIeAclP4NW26QiIKvVOpP9xf0EXV1t3hjtpgSVXCGclSn5A6g=="}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms | Allocations: 2259)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:06:32 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 329)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.7ms | Allocations: 5875)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:06:38 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 593)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 2958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 308)
+Completed 200 OK in 51ms (Views: 30.8ms | ActiveRecord: 6.7ms | Allocations: 13272)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:06:45 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"WghbHATaSe0sgpSu3YugSMtr/Rd/KOjdeCI+XZYlg0ChGr6Cou6PrgC/CF3haeD8Vy/pZ/rVnK+5BszXL2F7AQ==", "user"=>{"email"=>"z8764532z@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "z8764532z@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 228ms (ActiveRecord: 5.0ms | Allocations: 5263)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:06:45 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:13
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1199)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.9ms | Allocations: 6770)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:10:25 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1624)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 1444)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.6ms | Allocations: 8467)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 23:10:28 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"F++HVKtG7emznnOHb7V/iKuX/RrL5WUEh/z7RV/c4frCM+PghKgnuFAbINZvrbRW7pXPKNCkwOdy5sg1o1vg8A=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.3ms | Allocations: 4699)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:10:28 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1348)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 205)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 5733)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:10:59 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 515)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1838)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 185)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 7488)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:11:06 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"5FjeFgf66ttcJ6g5G8YFxxcRcsyqPNTEwex3Uweikyrfmfp1Khm8j6rLR3caLz049u5YO1B1b0JUXy+d0Q/6gQ==", "user"=>{"email"=>"z8764532z@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "z8764532z@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 217ms (ActiveRecord: 0.5ms | Allocations: 3754)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:11:06 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 1062)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 1.4ms | Allocations: 6613)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:12:17 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:3
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 2561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 516)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 1.1ms | Allocations: 8461)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:12:17 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:3
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 140)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 1.9ms | Allocations: 6574)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 23:12:19 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SjBOnMV7ydL27brDQPu9GAcF5wOEVJrrHuEcvfsMjW+KvTR2KaYxZkVY+U/nyL+boTOhdtnbxKLIJbDyEXeGmg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms | Allocations: 2121)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:12:19 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 173)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4454)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 23:12:21 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 171)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 4444)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 23:12:29 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 4451)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:12:30 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 511)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 185)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 7487)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:12:35 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"97eYK2cl9ZeMp9UH3Js13K267gWmbDH2cp0IdJI8UGOnYsRzEqv/nulEFMWqbQzAclYcq4GJFyy2XRDnUH8eVA==", "user"=>{"email"=>"z8764532z@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "z8764532z@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 215ms (ActiveRecord: 0.3ms | Allocations: 3767)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:12:35 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:3
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 143)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 6603)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:13:23 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:29
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2622)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 516)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.7ms | Allocations: 8536)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 23:13:25 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XHdd8ifxlEdN5LosW7mJI35Nur1Q4M3os5YTrcL8YzmWtE9rEUBHT2Qe49yjfApxTJIASZ8wQGbhE4p5z/YVkw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms | Allocations: 2128)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:13:25 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 173)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.9ms | Allocations: 5391)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 23:13:26 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1021)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 1.1ms | Allocations: 5359)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:13:28 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (4.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 206)
+Completed 200 OK in 26ms (Views: 19.1ms | ActiveRecord: 4.5ms | Allocations: 6108)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:13:29 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.8ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:17
+  Rendered abouts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 805)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 203)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.8ms | Allocations: 5193)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:14:26 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 389)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 546)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6317)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:14:28 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 511)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 185)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 7478)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:14:32 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"BE8dmEXSAcRZQ21l1pDkPjgmyQxQjaQOBUaBvbZt30tnW5Kp55maNXTW4t6T01ZzUbDKnpOrerFT24JqKVshEw==", "user"=>{"email"=>"z8764532z@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "z8764532z@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 216ms (ActiveRecord: 0.7ms | Allocations: 3764)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:14:32 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:29
+  Rendered projects/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2611)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 143)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.5ms | Allocations: 7621)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:14:36 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/abouts/index.html.erb:3
+  [1m[36mAbout Load (0.9ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:18
+  Rendered abouts/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1726)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 143)
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 3.0ms | Allocations: 6055)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:15:01 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/abouts/index.html.erb:3
+  [1m[36mAbout Load (1.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:18
+  Rendered abouts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1716)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 140)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 1.8ms | Allocations: 6045)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 23:15:02 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (2.2ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/images/index.html.erb:28
+  Rendered images/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 2215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 143)
+Completed 200 OK in 26ms (Views: 20.5ms | ActiveRecord: 4.5ms | Allocations: 7202)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 23:15:04 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CrqnABKyHedCm2AhP19Ql8llJ7A0ZmcFbMg0LQ5eEbDhIlYaF89deJvH3G2U5bcarCs70iiN4+IMQ+SBZB/sKA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 2129)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:15:04 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1026)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 177)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 5415)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 23:15:05 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1021)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.6ms | Allocations: 5367)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:15:06 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 185)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 5656)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:15:07 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  Rendered abouts/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 177)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4470)
+
+
