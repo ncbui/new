@@ -4875,3 +4875,176 @@ Processing by AboutsController#index as HTML
 Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4470)
 
 
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:17:37 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.6ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered abouts/index.html.erb within layouts/application (Duration: 250.7ms | Allocations: 163297)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 4.7ms | Allocations: 165495)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about' for #<#<Class:0x00007fb0a635f148>:0x00007fb0a6355a08>
+Did you mean?  abort
+               @abouts):
+    34: <%= link_to 'New About', new_about_path %>
+    35: 
+    36: <% else %>
+    37:        <%= about.firstname %>
+    38:        <%= about.lastname %>
+    39:        <%= about.tagline %>
+    40:        <%= about.hobbies %>
+  
+app/views/abouts/index.html.erb:37
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:17:54 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE About Load (0.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered abouts/index.html.erb within layouts/application (Duration: 235.3ms | Allocations: 158742)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.5ms | Allocations: 160056)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `abouts' for #<#<Class:0x00007fb0a2c5a3c8>:0x00007fb0a2c58410>
+Did you mean?  @abouts
+               abort):
+    34: <%= link_to 'New About', new_about_path %>
+    35: 
+    36: <% else %>
+    37:        <%= abouts.firstname %>
+    38:        <%= abouts.lastname %>
+    39:        <%= abouts.tagline %>
+    40:        <%= abouts.hobbies %>
+  
+app/views/abouts/index.html.erb:37
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:18:21 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 187.3ms | Allocations: 147076)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 0.3ms | Allocations: 148353)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `abouts' for #<#<Class:0x00007fb0a2567890>:0x00007fb0a2565068>
+Did you mean?  about
+               @abouts
+               abort):
+    35: 
+    36: <% else %>
+    37:  <% @abouts.each do |about| %>
+    38:        <%= abouts.firstname %>
+    39:        <%= abouts.lastname %>
+    40:        <%= abouts.tagline %>
+    41:        <%= abouts.hobbies %>
+  
+app/views/abouts/index.html.erb:38
+app/views/abouts/index.html.erb:37
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:18:24 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 174.5ms | Allocations: 146678)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 0.3ms | Allocations: 147123)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `abouts' for #<#<Class:0x00007fb0a2567890>:0x00007fb0a2385298>
+Did you mean?  about
+               @abouts
+               abort):
+    35: 
+    36: <% else %>
+    37:  <% @abouts.each do |about| %>
+    38:        <%= abouts.firstname %>
+    39:        <%= abouts.lastname %>
+    40:        <%= abouts.tagline %>
+    41:        <%= abouts.hobbies %>
+  
+app/views/abouts/index.html.erb:38
+app/views/abouts/index.html.erb:37
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:18:35 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 194.3ms | Allocations: 147091)
+Completed 500 Internal Server Error in 198ms (ActiveRecord: 0.3ms | Allocations: 148378)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `abouts' for #<#<Class:0x00007fb0a251c930>:0x00007fb0a2516a80>
+Did you mean?  about
+               @abouts
+               abort):
+    35: 
+    36: <% else %>
+    37:  <% @abouts.each do |about| %>
+    38:        <p><%= abouts.firstname %>
+    39:        <%= abouts.lastname %>
+    40:        <%= abouts.tagline %>
+    41:        <%= abouts.hobbies %></p>
+  
+app/views/abouts/index.html.erb:38
+app/views/abouts/index.html.erb:37
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:18:45 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.3ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 588)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.3ms | Allocations: 10466)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:19:26 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 546)
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.4ms | Allocations: 7103)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-06 23:19:43 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.7ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 546)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.7ms | Allocations: 7062)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 23:19:51 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:23
+  Rendered projects/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5206)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 178)
+Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 4.4ms | Allocations: 10449)
+
+
