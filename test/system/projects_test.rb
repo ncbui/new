@@ -14,10 +14,10 @@ class ProjectsTest < ApplicationSystemTestCase
     visit projects_url
     click_on "New Project"
 
-    fill_in "Demo,", with: @project.demo,
-    fill_in "Description,", with: @project.description,
+    fill_in "Demo,", with: @project.demo
+    fill_in "Description,", with: @project.description
     fill_in "Github", with: @project.github
-    fill_in "Name,", with: @project.name,
+    fill_in "Name,", with: @project.name
     click_on "Create Project"
 
     assert_text "Project was successfully created"
@@ -28,10 +28,10 @@ class ProjectsTest < ApplicationSystemTestCase
     visit projects_url
     click_on "Edit", match: :first
 
-    fill_in "Demo,", with: @project.demo,
-    fill_in "Description,", with: @project.description,
+    fill_in "Demo,", with: @project.demo
+    fill_in "Description,", with: @project.description
     fill_in "Github", with: @project.github
-    fill_in "Name,", with: @project.name,
+    fill_in "Name,", with: @project.name
     click_on "Update Project"
 
     assert_text "Project was successfully updated"

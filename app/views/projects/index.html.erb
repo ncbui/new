@@ -16,9 +16,9 @@
   <tbody>
     <% @projects.each do |project| %>
       <tr>
-        <td><%= project.name, %></td>
-        <td><%= project.description, %></td>
-        <td><%= project.demo, %></td>
+        <td><%= project.name %></td>
+        <td><%= project.description %></td>
+        <td><%= project.demo %></td>
         <td><%= project.github %></td>
         <td><%= link_to 'Show', project %></td>
         <td><%= link_to 'Edit', edit_project_path(project) %></td>

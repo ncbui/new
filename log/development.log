@@ -870,3 +870,160 @@ puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.7) lib/puma/server.rb:472:in `process_client'
 puma (4.3.7) lib/puma/server.rb:328:in `block in run'
 puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5160695226164068290)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5160695226164068290)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/images/projects/1" for 127.0.0.1 at 2021-04-06 21:10:11 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/images/projects/1"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 21:10:21 -0700
+  
+SyntaxError (/Users/zz/Documents/projects/portfolio/app/controllers/projects_controller.rb:67: syntax error, unexpected ',', expecting ')'
+...equire(:project).permit(:name,, :description,, :demo,, :gith...
+...                              ^
+):
+  
+app/controllers/projects_controller.rb:67: syntax error, unexpected ',', expecting ')'
+app/controllers/projects_controller.rb:67: syntax error, unexpected ',', expecting ')'
+app/controllers/projects_controller.rb:67: syntax error, unexpected ',', expecting ')'
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 21:11:06 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1145)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2875)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Projects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name,</th>
+      <th>Description,</th>
+      <th>Demo,</th>
+      <th>Github</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.name %></td>
+        <td><%= project.description %></td>
+        <td><%= project.demo %></td>
+        <td><%= project.github %></td>
+        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_project_path %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Projects</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th>Name,</th>
+9:          <th>Description,</th>
+10:          <th>Demo,</th>
+11:          <th>Github</th>
+12:          <th colspan="3"></th>
+13:        </tr>
+14:      </thead>
+15:    
+16:      <tbody>
+17:        <% @projects.each do |project| %>
+18:          <tr>
+19:            <td><%= project.name, %></td>
+20:            <td><%= project.description, %></td>
+21:            <td><%= project.demo, %></td>
+22:            <td><%= project.github %></td>
+23:            <td><%= link_to 'Show', project %></td>
+24:            <td><%= link_to 'Edit', edit_project_path(project) %></td>
+25:            <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+26:          </tr>
+27:        <% end %>
+28:      </tbody>
+29:    </table>
+30:    
+31:    <br>
+32:    
+33:    <%= link_to 'New Project', new_project_path %>
+  
+app/views/projects/index.html.erb:19: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:21: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:19: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:21: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:19: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:21: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:19: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:21: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:19: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:21: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:19: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:20: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:21: syntax error, unexpected ')', expecting '='
+app/views/projects/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/projects/index.html.erb:36: syntax error, unexpected `end', expecting ')'
