@@ -3,10 +3,12 @@
 
 <h1>Projects</h1>
 
-<div class="jumbotron">
-<h1> My name is Cam Bui
-</h1>
-</div>
+<% if user_signed_in?  %>
+    <div class="jumbotron">
+        <h1> My name is Cam Bui
+        </h1>
+    </div>
+<% end %>
 
 <div class="projects">
     <table class="projects-table">

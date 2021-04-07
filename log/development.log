@@ -5404,3 +5404,182 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.7ms | Allocations: 5426)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:44:53 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:26
+  Rendered projects/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 5766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 591)
+Completed 200 OK in 54ms (Views: 40.3ms | ActiveRecord: 5.5ms | Allocations: 16863)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:44:55 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:26
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.6ms | Allocations: 5502)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-07 15:26:54 -0700
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (8.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:26
+  Rendered projects/index.html.erb within layouts/application (Duration: 43.2ms | Allocations: 5766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 591)
+Completed 200 OK in 106ms (Views: 62.2ms | ActiveRecord: 27.3ms | Allocations: 16778)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 15:27:03 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:26
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 171)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.7ms | Allocations: 5499)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:27:04 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (3.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 4943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 178)
+Completed 200 OK in 41ms (Views: 29.6ms | ActiveRecord: 7.4ms | Allocations: 10199)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:27:23 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.4ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1143)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 547)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.4ms | Allocations: 7060)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:30:24 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 5397)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 588)
+Completed 200 OK in 49ms (Views: 38.9ms | ActiveRecord: 4.0ms | Allocations: 15650)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:30:24 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.2ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 743)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 5116)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:36:32 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 31.0ms | Allocations: 5408)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 593)
+Completed 200 OK in 1898ms (Views: 1883.3ms | ActiveRecord: 5.1ms | Allocations: 47465)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:38:56 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.5ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 753)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 40eef1c764855d01a588
+Version: webpack 4.46.0
+Time: 957ms
+Built at: 04/07/2021 3:39:00 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9c2c8fed87d71f9673e8.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9c2c8fed87d71f9673e8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9c2c8fed87d71f9673e8.js js/application-9c2c8fed87d71f9673e8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap-sprockets' in '/Users/zz/Documents/projects/portfolio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 17:0-30
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'jquery3' in '/Users/zz/Documents/projects/portfolio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 13:0-18
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'popper' in '/Users/zz/Documents/projects/portfolio/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 15:0-17
+
+
+warning ../../../package.json: No license field
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 171)
+Completed 200 OK in 3930ms (Views: 3928.9ms | ActiveRecord: 0.5ms | Allocations: 63274)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 15:41:10 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:26
+  Rendered projects/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 5766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 588)
+Completed 200 OK in 128ms (Views: 113.7ms | ActiveRecord: 4.2ms | Allocations: 29951)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 15:41:10 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (0.6ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 4927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 178)
+Completed 200 OK in 31ms (Views: 24.9ms | ActiveRecord: 3.0ms | Allocations: 12554)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-04-07 15:41:12 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 4836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 185)
+Completed 200 OK in 55ms (Views: 36.3ms | ActiveRecord: 3.9ms | Allocations: 17209)
+
+
