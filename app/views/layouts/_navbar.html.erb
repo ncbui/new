@@ -20,10 +20,10 @@
         <div class="nav container">
             <%= link_to "PORTFOLIO", "/projects", :class => "navbar-link navbar-left", :style => "position: abo; bottom: 0; left: 0;" %>
         </div>
-        <div class="nav container navbar-text navbar-right">
-            <%= link_to "Sign up", new_user_registration_path, :class => "navbar-link" %> |
-            <%= link_to "Login", new_user_session_path, :class => "navbar-link" %>
-        </div>
     <% end %>
 
 </div>
+        <div class=" navbar-text">
+            <%= link_to "Sign up", new_user_registration_path, :class => "navbar-link navbar-left" %> |
+            <%= link_to "Login", new_user_session_path, :class => "navbar-link" %>
+        </div>
