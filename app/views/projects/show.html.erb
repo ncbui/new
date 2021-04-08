@@ -5,30 +5,24 @@
 
     <% if user_signed_in? %>
         <p>
-        <strong>Name:</strong>
-        <%= @project.name %>
+        <strong><%= @project.name %></strong>
+        
         </p>
 
         <p>
-        <strong>Description:</strong>
         <%= @project.description %>
         </p>
 
         <p>
-        <strong>Demo:</strong>
-        <%= @project.demo %>
-        </p>
-
-        <p>
-        <strong>Github:</strong>
-        <%= @project.github %>
+        <%= link_to "Demo", @project.demo %>
+        <%= link_to "GH", @project.github %>
         </p>
 
         <%= link_to "Edit", edit_project_path(@project) %> |
         <%= link_to "Back", projects_path %>
     <% else %>
             <div class="project-carousel col-10 col-md-8">
-            <%= image_tag("default.png", :size => "200x200", :alt => "screenshot from project") %>
+                <%= image_tag("default.png", :size => "200x200", :alt => "screenshot from project") %>  
             </div>
             <div class="project-details col-10 col-md-4 mr-auto">
                 <div>
@@ -45,8 +39,7 @@
                     </p>
                 </div>
             </div>
-            
-            
+
         <% end %>
     </div>
 </div>

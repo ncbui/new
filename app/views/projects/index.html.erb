@@ -1,10 +1,7 @@
-
-<h1>Projects</h1>
+<div class="container" style="background-color:pink">
 
 <% if user_signed_in? %>
-
-
-
+<h1>Projects</h1>
 <div class="projects">
     <table class="projects-table">
     <thead>
@@ -45,38 +42,28 @@
 
 </div>
 <% else %>
-
-<div class="projects">
-    <table class="projects-table">
-    <thead>
-        <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Demo</th>
-        <th>Github</th>
-        <th colspan="3"></th>
-        </tr>
-    </thead>
-
-    <tbody>
+<h1>Projects</h1>
+<p> 
+</p>
+<div class="projects" style="background-color: springgreen">
         <% @projects.each do |project| %>
-        <tr>
-            <td><%= project.name %></td>
-            <td><%= project.description %></td>
-            <td><%= project.demo %></td>
-            <td><%= project.github %></td>
-            <td><%= link_to "Show", project %></td>
-        </tr>
+            <%= link_to project do %>
+            <div class="projects-card col-6" style="position: relative; left: 0; top: 0; display: inline-block;">
+                <%= image_tag "default.png", size: "200x200", :style => "position:relative; top:0px; left:0px;" %>
+                <p style="position: relative; top:0px; left:0px;"                             %>
+            </div>
+            <% end %>
+        
         <% end %>
-    </tbody>
-    </table>
 
     <br>
 
 </div>
+
+
 <% end %>
 
 
-
+</div>
 
 

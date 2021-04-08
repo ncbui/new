@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
 <% if user_signed_in? %>
 <h1>Abouts</h1>
@@ -21,9 +21,9 @@
         <td><%= about.lastname %></td>
         <td><%= about.tagline %></td>
         <td><%= about.hobbies %></td>
-        <td><%= link_to 'Show', about %></td>
-        <td><%= link_to 'Edit', edit_about_path(about) %></td>
-        <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to "Show", about %></td>
+        <td><%= link_to "Edit", edit_about_path(about) %></td>
+        <td><%= link_to "Destroy", about, method: :delete, data: { confirm: "Are you sure?" } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,13 +31,15 @@
 
 <br>
 
-<%= link_to 'New About', new_about_path %>
+<%= link_to "New About", new_about_path %>
 
 <% else %>
  <% @abouts.each do |about| %>
-       <p>Hi, I'm <%= about.firstname %> <%= about.lastname %>.</p>
-       <p><%= about.tagline %> </p>
-       <p><%= about.hobbies %> </p>
+       <p style="font-size: 48px;"><strong>Hi, I'm <%= about.firstname %> <%= about.lastname %>.</strong></p>
+       <p style="font-size: 40px;"><%= about.tagline %> </p>
+       <p style="font-size: 36px;"><%= about.hobbies %> </p>
     <% end %>
 
 <% end %>
+
+</div>
